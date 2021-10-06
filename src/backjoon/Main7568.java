@@ -3,7 +3,7 @@ package backjoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*
+/* 덩치
 5
 55 185
 58 183

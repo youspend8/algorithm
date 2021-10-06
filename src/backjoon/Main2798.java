@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/* 블랙잭
+10 500
+93 181 245 214 315 36 185 138 216 295
+
+5 21
+5 6 7 8 9
+ */
 public class Main2798 {
     private static int N;
     private static int M;

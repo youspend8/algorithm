@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/* 단지번호붙이기
+7
+0110100
+0110101
+1110101
+0000111
+0100000
+0111110
+0111000
+ */
 public class Main2667 {
     private static int N;
     private static int[][] graph;
