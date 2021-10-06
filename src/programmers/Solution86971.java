@@ -15,7 +15,10 @@ public class Solution86971 {
     private static int answer = Integer.MAX_VALUE;
     private static int N;
 
-    private static void dfs() {
+    /**
+     * 하나의 전선을 잇지 않은채 1번 노드를 기준으로 연결된 노드의 갯수 구하기
+     */
+    private static void bfs() {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(1);
         isVisited[1] = true;
@@ -46,13 +49,16 @@ public class Solution86971 {
             graph = new boolean[n + 1][n + 1];
             isVisited = new boolean[n + 1];
             for (int j = 0; j < LENGTH; j++) {
+                /**
+                 * 전선을 끊는것을 0번부터 순서대로 전선을 잇지 않으면서 탐색
+                 */
                 if (j != i) {
                     int[] wire = wires[j];
                     graph[wire[1]][wire[0]] = true;
                     graph[wire[0]][wire[1]] = true;
                 }
             }
-            dfs();
+            bfs();
         }
         return answer;
     }
